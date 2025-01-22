@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-
+  <head>
     <!-- BALISES CARTES SOCIALES -->
-     <meta property= "og:title" content="Le jeu du pendu">
-     <meta property="og:description" content="Amusez-vous avec le jeu du pendu et sauvez le personnage en trouvant le mot à temps">
-     <meta property="og:image" content="https://Entreprise.com/imageDuPendu.png">
-     <meta property="og:url" content="https://Entreprise.com">
-     <meta name="twitter:card" content="summary_large_image">
-     <meta property="og:site_name" content="Jeu || Le pendu">
-     <meta property="og:image:alt" content="Jeu le pendu">
+    <meta property="og:title" content="Le jeu du pendu" />
+    <meta
+      property="og:description"
+      content="Amusez-vous avec le jeu du pendu et sauvez le personnage en trouvant le mot à temps"
+    />
+    <meta
+      property="og:image"
+      content="https://Entreprise.com/imageDuPendu.png"
+    />
+    <meta property="og:url" content="https://Entreprise.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="Jeu || Le pendu" />
+    <meta property="og:image:alt" content="Jeu le pendu" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/potence.jpg" type ="image.jpg">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/potence.jpg" type="image.jpg" />
+    <link rel="stylesheet" href="style.css" />
     <title>Jeu | Le pendu</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Jeu | Le pendu</h1>
-        <nav><a href="mailto: entreprise@gmail.com">Contact</a></nav>
+      <h1>Jeu | Le pendu</h1>
+      <nav><a href="mailto: entreprise@gmail.com">Contact</a></nav>
     </header>
 
-    <div id="presentation">
+    <main>
+      <div id="presentation">
         <h2>Objectif</h2>
-        <p>Devinez les mots avant que le pendu ne soit complet. Vous avez 6 essais, 
-            chaque erreur rapproche le pendu de son sort... <br>
-            Saurez-vous sauver le personnage en trouvant le mot à temps ? <br>
-            Suspense et réflexion garantis !
+        <p>
+          Devinez les mots avant que le pendu ne soit complet. Vous avez 6
+          essais, chaque erreur rapproche le pendu de son sort... <br />
+          Saurez-vous sauver le personnage en trouvant le mot à temps ? <br />
+          Suspense et réflexion garantis !
         </p>
-    </div>
+      </div>
 
-    <div id="containerJeu">
-        <div id="colonneGauche"> <!-- PARTIE POUR L'IMAGE DU PENDU -->
-            <img id="imageDuPendu" src="images/pendu0.png" alt="Image du pendu">
+      <div id="containerJeu">
+        <div id="colonneGauche">
+          <!-- PARTIE POUR L'IMAGE DU PENDU -->
+          <img id="imageDuPendu" src="images/pendu0.png" alt="Image du pendu" />
         </div>
 
-        <div id="colonneDroite"> <!-- PARTIE POUR LES ENTREES ET LES MESSAGES -->
-            <h2>Mot à trouver</h2>
-            <div id="motAtrouver">_ _ _ _ _ _ _</div>
+        <div id="colonneDroite">
+          <!-- PARTIE POUR LES ENTREES ET LES MESSAGES -->
+          <h2>Mot à trouver</h2>
+          <div id="motAtrouver">_ _ _ _ _ _ _</div>
 
-            <div id="message"></div>
+          <div id="message"></div>
 
-            <!-- CHAMPS POUR ENTRER UNE LETTRE OU UN MOT -->
-            <div id="champs">
-                <input type="text" id="champsLettre" maxlength="1" placeholder="Entrez une lettre">
-                <span>ou</span>
-                <input type="text" id="champsMot" placeholder="Entrez un mot">
-            </div>
-            <!-- BOUTON POUR RECOMMENCER LE JEU -->
-            <div id="recommencer">
-                <button>Recommencer</button>
-            </div>
-           
+          <!-- CHAMPS POUR ENTRER UNE LETTRE OU UN MOT -->
+          <div id="champs">
+            <input
+              type="text"
+              id="champsLettre"
+              maxlength="1"
+              placeholder="Entrez une lettre"
+            />
+            <span>ou</span>
+            <input type="text" id="champsMot" placeholder="Entrez un mot" />
+          </div>
+          <!-- BOUTON POUR RECOMMENCER LE JEU -->
+          <div id="recommencer">
+            <button>Recommencer</button>
+          </div>
         </div>
-    </div>
+      </div>
+    </main>
 
-    <footer>
-        © Entreprise
-    </footer>
+    <footer>© Entreprise</footer>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
